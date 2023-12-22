@@ -60,7 +60,7 @@ justify-content: space-between;
 
 const Title = styled.h1`
 font-size: 1em;
-    margin: 5px 0px 20px 8px;
+    margin: 5px 0px 16px 8px;
 `;
 
 const Button = styled.button`

@@ -11,7 +11,7 @@ const ScssCard = () => {
       <img src={logo} alt="Logo" className="Logo" />
       <div className="RightDisplay">
       <h1 className="Title">CUBE 2023 </h1>
-      <p className="RateHead">Rate this album : </p>
+      <h3 className="RateHead">Rate this album : </h3>
       <div className="Stars">
         <IoIosStarOutline className="star"/>
         <IoIosStarOutline className="star"/>
