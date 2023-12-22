@@ -1,0 +1,44 @@
+.Container {
+    width: 50em;
+    margin: 20em;
+    box-shadow: 2px 2px 7px black;
+    border-radius: 8px;
+    .HeadDisplay {
+        display: flex;
+        justify-content: space-between;
+        .Logo {
+            width: 300px;
+            height: 300px;
+            border-radius: 8px 0px 0px 0px;
+        }
+    }
+    .RightDisplay {
+        margin-right: 8.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .Title {
+            text-align: center;
+            font-size: 2.5em;
+        }
+        .RateHead {
+            font-size: 1.5em;
+        }
+        .Stars {
+            font-size: 2.5em;
+        }
+    }
+    .Desc {
+        margin: 15px 0px 0px 5px;
+        font-size: 1.5em;
+    }
+    .LilDesc {
+        margin: 15px 0px 0px 5px;
+    }
+    .Ligne {
+        padding: 0px;
+        margin: 0px;
+        border: 1px solid black;
+    }
+}
