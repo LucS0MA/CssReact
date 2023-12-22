@@ -13,11 +13,11 @@ const ScssCard = () => {
       <h1 className="Title">CUBE 2023 </h1>
       <p className="RateHead">Rate this album : </p>
       <div className="Stars">
-        <IoIosStarOutline />
-        <IoIosStarOutline />
-        <IoIosStarOutline />
-        <IoIosStarOutline />
-        <IoIosStarOutline />
+        <IoIosStarOutline className="star"/>
+        <IoIosStarOutline className="star"/>
+        <IoIosStarOutline className="star"/>
+        <IoIosStarOutline className="star"/>
+        <IoIosStarOutline className="star"/>
         </div>
       </div>
       </div>

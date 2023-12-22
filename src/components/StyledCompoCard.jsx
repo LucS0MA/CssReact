@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    background-color: lightgrey;
     font-family: 'Montserrat', sans-serif;
   }
 `;
@@ -27,13 +28,16 @@ to {
 `
 
 const Container = styled.div`
-margin : 5em;
-width: 500px;
-border-radius: 8px;
-box-shadow: 2px 2px 7px black;
+height: fit-content;
+    background-color: white;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 7px black;
 `;
 
 const Logo = styled.img`
+height: 150px;
+    width: 150px;
   border-radius: 8px 8px 0px 0px;
   ${({ rotating }) =>
     rotating &&
@@ -41,6 +45,11 @@ const Logo = styled.img`
       animation: ${RotateAnimation} 2s linear infinite;
     `}
 `;
+
+const CentezMoiCetteMerde = styled.div`
+display: flex;
+justify-content: center;
+`
 
 
 const Head = styled.div`
@@ -50,22 +59,23 @@ justify-content: space-between;
 `;
 
 const Title = styled.h1`
-margin: 20px 0px 0px 5px;
+font-size: 1em;
+    margin: 5px 0px 20px 8px;
 `;
 
 const Button = styled.button`
-margin: 5px 50px 0px 5px;
+margin: 5px 20px 20px 8px;
 padding: 0.5em;
 `;
 
 const Para = styled.p`
-margin: 20px 0px 0px 5px;
-font-size: 1.5em;
+margin: 5px 20px 20px 8px;
+    font-size: 1em;
 `;
 
 const LilPara = styled.p`
-margin: 10px 0px 5px 5px;
-font-size: 1em;
+margin: 5px 0px 20px 8px;
+    font-size: 10px;
 `;
 
 const StyledCompoCard = () => {
@@ -82,7 +92,9 @@ const StyledCompoCard = () => {
         <>
           <Container>
             <GlobalStyle />
+            <CentezMoiCetteMerde className="CenterLogo">
             <Logo src={logo} rotating={isRotating} />
+            </CentezMoiCetteMerde>
             <Head>
             <Title>CUBE 2023 </Title>
             <Button onClick={handleButtonClick}>rotate</Button>
